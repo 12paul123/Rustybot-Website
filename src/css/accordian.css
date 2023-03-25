@@ -1,0 +1,47 @@
+@keyframes growy {
+    0% {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    100% {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@keyframes shrinky {
+    0% {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    100% {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.color-a {
+    background-color: #df3232;
+}
+
+.animated-container {
+    overflow: hidden;
+    max-height: 0px;
+}
+
+.animated-container[aria-expanded="true"] {
+    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+}
+
+.animated-container[aria-expanded="false"] {
+    max-height: 1000px;
+    transition: max-height 0.3s cubic-bezier(0.8, 0.1, 1, 0);
+}
+
+.fit-content {
+    height: fit-content;
+}
+
+.form-control {
+    border-style: none;
+}
