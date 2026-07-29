@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Accordion from "./Accordion";
+import AccordionCommand from './AccordionCommand';
 import { accordionData } from "./data";
 
 function SearchData() {
@@ -7,7 +7,6 @@ function SearchData() {
     const [category, setCategory] = useState("")
 
     const isItems = (value) => {
-        console.log(value.category)
         if (value.heading.toLowerCase().includes(query)) {
             if (value.category == category) {
                 return true
@@ -32,10 +31,13 @@ function SearchData() {
                 <button onClick={() => setCategory("Moderation")} class="command-button p-2 m-2 text-secondary">Moderation</button>
             </div>
             <div>
-                <button onClick={() => setCategory("Gambling")} class="command-button p-2 m-2 text-secondary">Gambling</button>
+                <button onClick={() => setCategory("Rust")} class="command-button p-2 m-2 text-secondary">Rust</button>
             </div>
             <div>
-                <button onClick={() => setCategory("Rust")} class="command-button p-2 m-2 text-secondary">Rust</button>
+                <button onClick={() => setCategory("General")} class="command-button p-2 m-2 text-secondary">General</button>
+            </div>
+            <div>
+                <button onClick={() => setCategory("Economy")} class="command-button p-2 m-2 text-secondary">Economy</button>
             </div>
         </div>
         <div class="col-md-6 px-4">
@@ -44,7 +46,7 @@ function SearchData() {
             </form>
             {accordionData.filter(isItems)
                     .map(({ heading, description, content, category }) => (
-                <Accordion heading={heading}
+                <AccordionCommand heading={heading}
                     description={description}
                     content={content}
                     category={category}

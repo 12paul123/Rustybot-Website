@@ -11,6 +11,8 @@ import {
   Route,
 } from "react-router-dom";
 
+import Tutorial from './pages/Tutorial';
+
 const router = createBrowserRouter([
   {
   path: "/",
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "terms",
     element: <Terms/>
+  },
+  {
+    path: "tutorial",
+    element: <Tutorial/>
   }
 ])
 

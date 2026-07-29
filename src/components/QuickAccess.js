@@ -13,7 +13,7 @@ function QuickAccess({
             <div><a class="text-d" href="#questions">Ask Me</a></div>
         </div>
         )
-    } else if (page == "commands") {
+    } else {
         return (
         <div class="d-flex flex-column align mb-4">
             <h5>Quick Access</h5>

@@ -12,9 +12,9 @@ function Footer({
             <QuickAccess page={page}></QuickAccess>
             <div class="d-flex flex-column align mb-4">
               <h5>Links</h5>
-              <div><a class="text-d" href="#">Top.gg</a></div>
-              <div><a class="text-d" href="#">Github</a></div>
-              <div><a class="text-d" href="#top">Invite</a></div>
+              <div><a class="text-d" href="https://top.gg/bot/739031493313167421">Top.gg</a></div>
+              <div><a class="text-d" href="https://github.com/12paul123">Github</a></div>
+              <div><a class="text-d" href="https://discord.com/api/oauth2/authorize?client_id=739031493313167421&permissions=1099780418560&scope=bot">Invite</a></div>
             </div>
             <div class="d-flex flex-column align mb-4">
               <h5>About</h5>
@@ -24,7 +24,7 @@ function Footer({
             </div>
             <div class="d-flex flex-column align">
               <h5>Follow Us</h5>
-              <div><a class="text-d" href="#"></a></div>
+              <div><a class="text-d" href="https://discord.gg/ykpkhF8aJk">First Corps</a></div>
             </div>
           </div>
         </div>

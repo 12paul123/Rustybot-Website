@@ -1,5 +1,5 @@
 import React from 'react'
-import Question from './Question'
+import AccordionQuestion from './AccordionQuestion'
 
 function FAQ() {
   return (
@@ -8,11 +8,11 @@ function FAQ() {
           <h2 class="text-center mb-4 bg-dark">
             Frequently Asked Questions
           </h2>
-          <Question
+          <AccordionQuestion
             title="How do use setup news/wipe channels?"/>
-          <Question
+          <AccordionQuestion
             title="How do you earn scrap?"/>
-          <Question
+          <AccordionQuestion
             title="How do you farm?"/>
         </div>
     </section>

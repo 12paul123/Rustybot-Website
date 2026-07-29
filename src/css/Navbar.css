@@ -73,5 +73,37 @@
 }
 
 .text-s {
-    color: rgb(236, 236, 236)
+    color: rgb(236, 236, 236);
+}
+
+.p-font {
+    font-size: 17px;
+    padding: 180px;
+}
+
+@media screen and (max-width: 992px) {
+    .p-font {
+        padding: 40px;
+        padding-top: 100px;
+    }
+  }
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-size: 27px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

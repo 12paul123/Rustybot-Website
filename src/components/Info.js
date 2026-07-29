@@ -13,7 +13,9 @@ function Info() {
                         a fully featured scrap economy with mini games
                         and moderation tools.
                     </p>
-                    <button type="button" class="btn btn-danger btn-lg">Invite Rusty Bot</button>
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=739031493313167421&permissions=1099780418560&scope=bot">
+                        <button type="button" class="btn btn-danger btn-lg">Invite Rusty Bot</button>
+                    </a>
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block" src="bot.svg" alt=""></img>
             </div>

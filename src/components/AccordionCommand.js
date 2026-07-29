@@ -37,14 +37,14 @@ const AccordionContent = styled.div`
     border-bottom-right-radius: 5px;
 `
 
-const Accordion = ({ heading, description, content, category }) => {
+const AccordionCommand = ({ heading, description, content, category }) => {
     const [isActive, setIsActive] = useState(false);
 
     return (
         <div id={category}>
             <AccordionItem class="animated-item" aria-expanded={!isActive} onClick={() => setIsActive(!isActive)}>
                 <div class="row">
-                    <h6 class="col-md-3">{heading}</h6>
+                    <h6 class="col-md-3 overflow-hidden">{heading}</h6>
                     <h7 class="text-s col-md-9">{description}</h7>
                 </div>
             </AccordionItem>
@@ -57,4 +57,4 @@ const Accordion = ({ heading, description, content, category }) => {
     )
 }
 
-export default Accordion
+export default AccordionCommand

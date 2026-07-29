@@ -20,7 +20,9 @@ function Invite() {
                     <div class="fs-1 mb-3">
                         Join us now!
                     </div>
-                    <button type="button" class=" btn custom-button btn-danger">Invite</button>
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=739031493313167421&permissions=1099780418560&scope=bot">
+                        <button type="button" class=" btn custom-button btn-danger">Invite</button>
+                    </a>
                 </div>
 
                 <div class="col-md text-light">
